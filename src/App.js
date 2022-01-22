@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import CheckboxItem from "./components/UI/checkbox/CheckboxItem";
+import CheckboxArray from "./components/UI/checkboxArray/CheckboxArray";
+import {FormControl, InputLabel, Select, MenuItem} from "@mui/material";
+import FirstRow from "./components/firstRow/FirstRow";
+import SecondRow from "./components/secondRow/SecondRow";
+import ThirdRow from "./components/thirdRow/ThirdRow";
+import FormPage from "./components/FormPage";
+
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <FormPage/>
     </div>
-  );
+  )
 }
 
 export default App;

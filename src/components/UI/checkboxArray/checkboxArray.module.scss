@@ -1,0 +1,23 @@
+.checkbox_wrapper{
+  height: 36*8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.checkbox__block{
+  width: fit-content;
+}
+
+.checkbox__block_header{
+  margin-left: 12px;
+  h2{
+    margin-bottom: 0.2em;
+  }
+
+  h4{
+    margin-bottom: 0.4em;
+  }
+
+}
