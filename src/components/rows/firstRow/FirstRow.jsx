@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import CheckboxItem from "../UI/checkbox/CheckboxItem";
+import CheckboxItem from "../../UI/checkbox/CheckboxItem";
 import classes from "./firstRow.module.scss"
 import {Box, FormControl, InputLabel, MenuItem, Select, TextField} from "@mui/material";
 
@@ -14,19 +14,22 @@ const FirstRow = (props) => {
     return (
         <Box
             className={classes.first_row_div}
-            component="form"
+            component="div"
             sx={{
-                '& .MuiTextField-root': { ml: 4, maxWidth:"180px", minWidth:"44px"},
+                '& .MuiTextField-root': { ml: "32px", maxWidth:"180px", minWidth:"100px", my:"10px"},
             }}
             noValidate
             autoComplete="off"
         >
-            <CheckboxItem spec={CheckboxSpec}/>
+            <div className={classes.checkbox_div}>
+                <CheckboxItem spec={CheckboxSpec}/>
+            </div>
+
             <TextField className={classes.first_row_inputs} size="small" id="firstRow1input" label="1placeholder" variant="outlined"/>
             <TextField className={classes.first_row_inputs} size="small" id="firstRow2input" label="2placeholder" variant="outlined" />
             <TextField className={classes.first_row_inputs} size="small" id="firstRow3input" label="3placeholder" variant="outlined" />
 
-            <FormControl size={"small"} sx={{minWidth:"120px"}} className={classes.first_row_select}>
+            <FormControl size={"small"} sx={{minWidth:"120px", my:"10px", ml:"32px;"}} className={classes.first_row_select}>
                 <InputLabel id="demo-simple-select-label">select</InputLabel>
                 <Select
                     labelId="demo-simple-select-label"

@@ -1,14 +1,15 @@
 .third_row_div{
   display: flex;
   margin-top: 20px;
-}
-
-.third_row_inputs{
-  margin-left: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .third_row_select{
   margin-left: 40px;
 }
 
-
+.checkbox_div{
+  width: 220px;
+}

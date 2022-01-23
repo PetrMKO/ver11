@@ -1,16 +1,18 @@
 import React from 'react';
 import CheckboxItem from "../checkbox/CheckboxItem";
 import classes from "./checkboxArray.module.scss"
-import {Button} from "@mui/material";
+import {Box, Button} from "@mui/material";
 const CheckboxArray = (props) => {
     return (
-        <div className={classes.checkbox__block}>
+        <Box
+            className={classes.checkbox__block}
+            component="div"
+            >
             <div className={classes.checkbox__block_header}>
-                <h2>{props.boxSpec.header}</h2>
                 <h4>{props.boxSpec.h2}</h4>
             </div>
 
-            <div className={classes.checkbox_wrapper}>
+            <div style={{width:`${170*Math.ceil(props.boxArray.length/8)}px`}} className={classes.checkbox_wrapper}>
                 {props.boxArray.map(checkbox =>
                     <CheckboxItem spec={checkbox} key={checkbox.id}/>
                 )}
@@ -20,9 +22,11 @@ const CheckboxArray = (props) => {
             <Button variant="contained" size="small" sx={{
                 color: '#FFFFFF',
                 backgroundColor: '#F16722',
-                boxShadow:'none'
+                boxShadow:'none',
+                mt: '22px',
+                px: '20px'
             }}>Добавить свой параметр</Button>
-        </div>
+        </Box>
     );
 };
 

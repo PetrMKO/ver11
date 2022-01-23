@@ -1,4 +1,4 @@
-.checkbox_wrapper{
+.checkbox_wrapper {
   height: 36*8px;
   display: flex;
   flex-direction: column;
@@ -7,17 +7,17 @@
 }
 
 .checkbox__block{
+  padding: 5px;
   width: fit-content;
 }
 
 .checkbox__block_header{
-  margin-left: 12px;
-  h2{
-    margin-bottom: 0.2em;
-  }
-
+  margin-left: 8px;
+  font-weight: 400;
   h4{
+    color: rgba(0, 0, 0, 0.6);
     margin-bottom: 0.4em;
+    font-weight: 400;
   }
 
 }
